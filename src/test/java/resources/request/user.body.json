@@ -1,0 +1,16 @@
+{
+    "post":
+        {
+            "nome": "Fulano da Silva",
+            "email": "test4535000@qa.com.br",
+            "password": "teste",
+            "administrador": "true"
+        },
+    "put":
+    {
+        "nome": "Fulano da Silva",
+        "email": "test4535000@qa.com.br",
+        "password": "teste",
+        "administrador": "true"
+    }
+}

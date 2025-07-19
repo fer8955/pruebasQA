@@ -1,0 +1,63 @@
+{
+  "get": {
+    "200": {
+      "quantidade": "#number",
+      "usuarios":
+      {
+        "nome": "#string",
+        "email": "#string",
+        "password": "#string",
+        "administrador": "#string",
+        "_id": "#string"
+      }
+
+    }
+  },
+
+  "post": {
+    "201": {
+      "message": "#string",
+      "_id": "#string"
+
+    },
+    "400": {
+      "message": "#string"
+    }
+  },
+  "getId": {
+    "200": {
+      "usuarios":
+      {
+        "nome": "#string",
+        "email": "#string",
+        "password": "#string",
+        "administrador": "#string",
+        "_id": "#string"
+      }
+    },
+    "400": {
+      "message": "#string"
+    }
+  },
+  "delete": {
+    "200": {
+      "message": "#string"
+    },
+    "400": {
+      "message": "#string",
+      "idCarrinho": "#string"
+    }
+  },
+  "put": {
+    "200": {
+      "message": "#string"
+    },
+    "201": {
+      "message": "#string",
+      "_id": "#string"
+    },
+    "400": {
+      "message": "#string"
+    }
+  }
+}
