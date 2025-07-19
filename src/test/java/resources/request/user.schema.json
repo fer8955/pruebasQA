@@ -38,5 +38,26 @@
     "400": {
       "message": "#string"
     }
+  },
+  "delete": {
+    "200": {
+      "message": "#string"
+    },
+    "400": {
+      "message": "#string",
+      "idCarrinho": "#string"
+    }
+  },
+  "put": {
+    "200": {
+      "message": "#string"
+    },
+    "201": {
+      "message": "#string",
+      "_id": "#string"
+    },
+    "400": {
+      "message": "#string"
+    }
   }
 }

@@ -2,20 +2,20 @@
 function fn() {
 	var env = karate.env;
 	if (!env) {
-		env = 'integracion';
+		env = 'certificacion';
 	}
 
 	var config = { 
+        baseUrl : 'https://serverest.dev/'
 
     };
 
 	if (env == 'integracion') {
-        config.baseUrl = 'https://serverest.dev/';
-        config.LoginPassword = 'teste'
+
     }
 
     if (env == 'certificacion') {
-        config.baseUrl = '';
+        config.baseUrl = 'https://serverest.dev/'
     }
 
     if (env == 'produccion') {

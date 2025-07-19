@@ -12,8 +12,8 @@ class TestRunner {
 
     @Test
     void testParallel() {
-        Results results = Runner.path("classpath:resources/features/getId.feature")
-                //.tags("@getUsuarios")
+        Results results = Runner.path("classpath:resources/features")
+                //.tags("@")
                 .outputCucumberJson(true)
                 .parallel(1);
         Cucumber cucumber = new Cucumber();

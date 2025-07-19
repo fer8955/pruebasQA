@@ -9,13 +9,18 @@ Feature: API Users - Post
 
   @201
   Scenario: POST Users - Success
+
+    #Generar data
     * def dataGenerator = Java.type('karate.helpers.dataPostGenerator')
     * def nome = dataGenerator.generateUniqueNome()
     * def email = dataGenerator.generateUniqueEmail()
     * def admin = dataGenerator.getRandomBooleanAsString()
+    * def pass = dataGenerator.generateUniquePass()
     * body.post.nome = nome
     * body.post.email = email
+    * body.post.password = pass
     * body.post.administrador = admin
+
     Given request body.post
     When method post
     Then status 201
@@ -67,7 +72,3 @@ Feature: API Users - Post
       |Empty Email    |email|
       |Empty Password |password|
       |Empty Admin    |administrador|
-
-
-
-

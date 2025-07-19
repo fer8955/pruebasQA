@@ -36,6 +36,26 @@ public class dataPostGenerator {
         return nome + " " + sobrenome;
     }
 
+    public static String generateUniquePass(){
+        // Generar UUID
+        String uuid = UUID.randomUUID().toString().replaceAll("-", "");
+        String lettersOnly = uuid.replaceAll("[^a-zA-Z]", "");
+
+        if (lettersOnly.length() < 5) {
+            // Si por alguna razón no hay suficientes letras, generar otro UUID
+            return generateUniquePass();
+        }
+
+        // Retornar el pass en minuscula
+        return lettersOnly.substring(0, 5).toLowerCase();
+    }
+
+    public static String generateId(){
+        String uuid = UUID.randomUUID().toString().replace("-", "");
+        return uuid.substring(0, 8);
+    }
+
+
     public static String getRandomBooleanAsString() {
         return RANDOM.nextBoolean() ? "true" : "false";
     }
