@@ -3,7 +3,7 @@
 Este proyecto automatiza la validación de los endpoints relacionados con **usuarios** de la API pública [Serverest](https://serverest.dev), utilizando el framework [Karate](https://github.com/karatelabs/karate) para pruebas de servicios REST.
 
 
-## pruebasQA
+## Src
 
 En la carpeta ubicada en la raíz del proyecto pruebasQA, se encuentra el proyecto realizado a la api de usuarios de ServeRest https://serverest.dev/
 
