@@ -1,0 +1,21 @@
+{
+    "name": "playwright-web-framework",
+    "version": "1.0.0",
+    "author": {
+        "name": "Flavio Romero",
+        "email": "fromero@baufest.com"
+    },
+    "license": "ISC",
+    "main": "index.js",
+    "scripts": {
+        "build": "npx bddgen",
+        "clean": "rm -rf target",
+        "test": "npx bddgen && npx playwright test"
+    },
+    "devDependencies": {
+        "@playwright/test": "^1.49.1",
+        "@types/node": "^22.10.6",
+        "dotenv": "^16.4.7",
+        "playwright-bdd": "^8.0.1"
+    }
+}
