@@ -93,9 +93,7 @@ PROD_BASEURL=https://prod.example.com
   npm run test -- --grep @invalidUser
   
   # Ejecución por entornos
-  STAGING=INTE npm run test
   STAGING=CERT npm run test
-  STAGING=PROD npm run test
 ```
 
 ## Storage State
